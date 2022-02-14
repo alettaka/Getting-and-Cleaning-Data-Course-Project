@@ -67,7 +67,7 @@ accelometer_sum1 <-ddply(melt(accelometer_data, id.vars=c("Subject", "Activity")
 # and each variable is a column.
 accelometer_summary <- spread(accelometer_sum1, variable, MeanSamples)
 # generate an independent tidy dataset by writing the dataframe to a .csv file
-write.table(accelometer_summary, "tidy_accelometer_summary.csv", row.name=FALSE)
+write.table(accelometer_summary, "tidy_accelometer_summary.txt", row.name=FALSE)
 ```
 
 
